@@ -1,0 +1,197 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.resume {
+  max-width: 900px;
+  margin: auto;
+  padding: 25px;
+  color: #352444;
+  background: #faf8fc;
+  line-height: 1.7;
+}
+
+/* NAVIGATION */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #291b3b;
+  padding: 12px 25px;
+  border-radius: 10px;
+}
+
+nav h2 {
+  color: #d8be7b;
+  margin: 0;
+}
+
+nav span {
+  color: white;
+  font-size: 11px;
+}
+
+/* INTRO */
+
+.intro {
+  text-align: center;
+  background: #291b3b;
+  color: white;
+  padding: 55px 20px;
+  margin-top: 15px;
+  border-radius: 10px;
+}
+
+.intro h1 {
+  font-size: 32px;
+  color: #e5c77d;
+}
+
+.intro h3 {
+  color: #ded2e9;
+}
+
+.intro p {
+  color: #ded2e9;
+}
+
+.gold {
+  color: #d8be7b !important;
+  letter-spacing: 2px;
+  font-size: 12px;
+}
+
+/* SECTIONS */
+
+section {
+  margin: 35px 0;
+}
+
+section h2 {
+  color: #49345d;
+  border-bottom: 2px solid #d8be7b;
+  padding-bottom: 8px;
+  font-size: 21px;
+}
+
+/* CARDS */
+
+.content-card {
+  background: white;
+  border: 1px solid #e5ddec;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.content-card h3 {
+  color: #8a6da5;
+}
+
+/* SKILLS */
+
+ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  padding-left: 20px;
+}
+
+li {
+  background: #eee7f4;
+  padding: 10px;
+  border-radius: 6px;
+  color: #49345d;
+}
+
+/* BUTTONS */
+
+button {
+  background: #d8be7b;
+  color: #291b3b;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+button:hover {
+  background: #eedba9;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* CLICK COUNTER */
+
+.button-section {
+  background: #291b3b;
+  color: white;
+  text-align: center;
+  padding: 30px 15px;
+  border-radius: 10px;
+}
+
+.button-section h2 {
+  color: #e5c77d;
+}
+
+.button-section p {
+  color: #ded2e9;
+}
+
+.button-section h3 {
+  color: #e5c77d;
+}
+
+/* FOOTER */
+
+footer {
+  background: #291b3b;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+footer h2 {
+  color: #d8be7b;
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+  .resume {
+    padding: 12px;
+  }
+
+  .intro h1 {
+    font-size: 25px;
+  }
+
+  ul {
+    grid-template-columns: 1fr;
+  }
+
+  nav span {
+    font-size: 9px;
+  }
+}
+
+/* PRINT */
+
+@media print {
+  button {
+    display: none;
+  }
+}

@@ -1,0 +1,84 @@
+
+.profile-card {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #30203f, #49345e);
+  color: #ffffff;
+  padding: 32px;
+  margin: 25px 0;
+  border-radius: 14px;
+  border: 1px solid #b99a60;
+  border-left: 5px solid #d8be7b;
+  box-shadow: 0 8px 25px rgba(48, 32, 63, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Subtle hover effect */
+.profile-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 30px rgba(48, 32, 63, 0.22);
+}
+
+/* Small gold label */
+.profile-card .tag {
+  display: inline-block;
+  background: rgba(216, 190, 123, 0.15);
+  color: #e5cc8e;
+  border: 1px solid rgba(216, 190, 123, 0.4);
+  padding: 7px 13px;
+  border-radius: 20px;
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+/* Card heading */
+.profile-card h2 {
+  color: #f0dba5;
+  font-family: Georgia, serif;
+  font-size: 27px;
+  margin: 20px 0 12px;
+}
+
+/* Description */
+.profile-card p {
+  color: #e4dbea;
+  font-size: 14px;
+  line-height: 1.9;
+  margin-bottom: 20px;
+}
+
+/* Gold decorative divider */
+.profile-card h2::after {
+  content: "";
+  display: block;
+  width: 55px;
+  height: 3px;
+  background: #d8be7b;
+  margin-top: 13px;
+  border-radius: 5px;
+}
+
+/* Gold closing message */
+.profile-card .gold-text {
+  color: #e5c77d;
+  font-weight: bold;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  margin-bottom: 0;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .profile-card {
+    padding: 22px;
+  }
+
+  .profile-card h2 {
+    font-size: 23px;
+  }
+
+  .profile-card p {
+    font-size: 13px;
+  }
+}

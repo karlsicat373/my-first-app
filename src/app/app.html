@@ -1,0 +1,109 @@
+
+<div class="resume">
+
+  <nav>
+    <h2>EKG.</h2>
+    <span>MY PERSONAL PORTFOLIO</span>
+  </nav>
+
+  <header class="intro">
+
+    <p class="gold">WELCOME TO MY WEBSITE</p>
+
+    <h1>{{ name }}</h1>
+
+    <h3>Aspiring Web Developer</h3>
+
+    <p>
+      A student passionate about technology,
+      programming, and creating modern websites.
+    </p>
+
+    <button (click)="printResume()">
+      Print Resume
+    </button>
+
+  </header>
+
+  <section>
+    <h2>About Me</h2>
+
+    <app-profile-card></app-profile-card>
+
+    <p>
+      I am a student who enjoys learning new
+      technologies and improving my programming
+      skills through practice and projects.
+    </p>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+
+    <div class="content-card">
+      <h3>Student</h3>
+      <p>
+        Currently studying Advanced Dynamic Web
+        Applications and learning Angular development.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Key Skills</h2>
+
+    <ul>
+      @for (skill of skills; track skill) {
+        <li>{{ skill }}</li>
+      }
+    </ul>
+  </section>
+
+  <section>
+    <h2>My Project</h2>
+
+    <div class="content-card">
+      <h3>Personal Profile Website</h3>
+      <p>
+        A personal website created using Angular,
+        TypeScript, HTML, and CSS. It demonstrates
+        reusable components and interactive features.
+      </p>
+    </div>
+  </section>
+
+  <section class="button-section">
+
+    <h2>Try My Button!</h2>
+
+    <p>Click the button to increase the counter.</p>
+
+    <button
+      [disabled]="clickCount >= 10"
+      (click)="handleClick()">
+      Click Me
+    </button>
+
+    <h3>
+      You clicked the button {{ clickCount }} time(s).
+    </h3>
+
+  </section>
+
+  <section>
+    <h2>Contact Information</h2>
+
+    <div class="content-card">
+      <p><strong>Name:</strong> {{ name }}</p>
+      <p><strong>Email:</strong> {{ email }}</p>
+      <p><strong>Phone:</strong> {{ phone }}</p>
+    </div>
+  </section>
+
+  <footer>
+    <h2>EKG.</h2>
+    <p>© 2026 {{ name }}</p>
+    <p>Made with Angular.</p>
+  </footer>
+
+</div>
